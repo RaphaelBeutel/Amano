@@ -10,11 +10,26 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 		
-		<link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/grid.css">
+		<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/style.css">
+        <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/reset.css">
+        <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/style.css">
+        <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/grid.css">
         
-        <script language="JavaScript" src="http://code.jquery.com/jquery-1.8.2.js">
+        <script language="JavaScript" src="http://code.jquery.com/jquery-1.8.2.js"></script>
+   		<?php wp_head(); ?>
     </head>
     <body>
+    	<div class="wrapper">
+	    	<header>
+	    		<nav id="main">
+	    			<ul>
+	    				<li><a href="<?php bloginfo('url'); ?>">Start</a></li>
+	    				<li><a href="<?php bloginfo('url'); ?>">Amano</a></li>
+	    				<li><a href="<?php bloginfo('url'); ?>">Film</a></li>
+	    				<li><a href="<?php bloginfo('url'); ?>">Blog</a></li>
+	    			</ul>
+	    		</nav>
+			</header>
+			
+			
+		</div>
