@@ -36,9 +36,9 @@
 	    				<?php } ?>
 	    				
 	    				<?php if( get_the_ID() == "8" ) { ?>
-	    					<li><a href="<?php echo get_permalink(8); ?>" class="americancaptain active">Film</a></li>
+	    					<li><a href="<?php echo get_permalink(8); ?>" class="americancaptain active">Filme</a></li>
 	    				<?php }else{ ?>
-	    					<li><a href="<?php echo get_permalink(8); ?>" class="americancaptain">Film</a></li>
+	    					<li><a href="<?php echo get_permalink(8); ?>" class="americancaptain">Filme</a></li>
 	    				<?php } ?>
 	    				
 	    				<?php if( get_the_ID() == "10" ) { ?>
