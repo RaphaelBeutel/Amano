@@ -12,11 +12,16 @@
   width: 200px;
 }
 .wrapper header #main ul {
+  margin-top: -30px;
   padding-top: 5px;
 }
 .wrapper header #main ul li {
   float: left;
   margin-left: 10px;
+}
+.wrapper #page {
+  margin-top: 20px;
+  padding: 20px;
 }
 #home {
   width: 100%;
@@ -40,4 +45,5 @@
   left: 50%;
   border: 5px double #000000;
   font-size: 50px;
+  line-height: 54px;
 }

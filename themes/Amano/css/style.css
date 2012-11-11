@@ -8,6 +8,8 @@
 }
 body {
   font-family: Znikomit;
+  font-size: 18px;
+  line-height: 22px;
 }
 a {
   transition: all 200ms;
@@ -17,6 +19,15 @@ a {
 a:hover {
   transition: all 200ms;
   color: #6c7779;
+}
+h1 {
+  font-size: 60px;
+  line-height: 64px;
+}
+h2 {
+  font-size: 31px;
+  line-height: 35px;
+  text-align: justify;
 }
 .active {
   color: #6c7779;
