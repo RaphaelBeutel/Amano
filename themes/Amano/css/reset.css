@@ -126,23 +126,3 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-@font-face {
-  font-family: Znikomit;
-  src: url(../gfx/font/Znikomit.otf);
-}
-@font-face {
-  font-family: American Captain;
-  src: url(../gfx/font/AmericanCaptain.otf);
-}
-a {
-  transition: all 200ms;
-  font-family: American Captain;
-  font-size: 20px;
-  text-shadow: #000000 -1px -1px 3px;
-  text-decoration: none;
-  color: #fff4d0;
-}
-a:hover {
-  transition: all 200ms;
-  color: #6c7779;
-}

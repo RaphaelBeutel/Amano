@@ -23,13 +23,30 @@
 	    	<header>
 	    		<nav id="main">
 	    			<ul>
-	    				<li><a href="<?php bloginfo('url'); ?>">Start</a></li>
-	    				<li><a href="<?php bloginfo('url'); ?>">Amano</a></li>
-	    				<li><a href="<?php bloginfo('url'); ?>">Film</a></li>
-	    				<li><a href="<?php bloginfo('url'); ?>">Blog</a></li>
+	    				<?php if( get_the_ID() == "2" ) { ?>
+	    					<li><a href="<?php echo get_permalink(2); ?>" class="americancaptain active">Start</a></li>
+	    				<?php }else{ ?>
+	    					<li><a href="<?php echo get_permalink(2); ?>" class="americancaptain">Start</a></li>
+	    				<?php } ?>
+	    				
+	    				<?php if( get_the_ID() == "6" ) { ?>
+	    					<li><a href="<?php echo get_permalink(6); ?>" class="americancaptain active">Amano</a></li>
+	    				<?php }else{ ?>
+	    					<li><a href="<?php echo get_permalink(6); ?>" class="americancaptain">Amano</a></li>
+	    				<?php } ?>
+	    				
+	    				<?php if( get_the_ID() == "8" ) { ?>
+	    					<li><a href="<?php echo get_permalink(8); ?>" class="americancaptain active">Film</a></li>
+	    				<?php }else{ ?>
+	    					<li><a href="<?php echo get_permalink(8); ?>" class="americancaptain">Film</a></li>
+	    				<?php } ?>
+	    				
+	    				<?php if( get_the_ID() == "10" ) { ?>
+	    					<li><a href="<?php echo get_permalink(10); ?>" class="americancaptain active">Blog</a></li>
+	    				<?php }else{ ?>
+	    					<li><a href="<?php echo get_permalink(10); ?>" class="americancaptain">Blog</a></li>
+	    				<?php } ?>
 	    			</ul>
 	    		</nav>
 			</header>
-			
-			
 		</div>
