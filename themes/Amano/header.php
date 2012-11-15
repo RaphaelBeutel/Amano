@@ -16,6 +16,7 @@
         <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/grid.css">
         
         <script language="JavaScript" src="http://code.jquery.com/jquery-1.8.2.js"></script>
+        <script language="JavaScript" src="<?php bloginfo('template_directory'); ?>/js/js.js"></script>
    		<?php wp_head(); ?>
     </head>
     <body>
