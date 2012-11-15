@@ -1,4 +1,4 @@
-<?php /* Template Name: Index */ ?>
+<?php /* Template Name: Filme */ ?>
 <?php get_header(); ?>
 		<div class="wrapper">
 			<article id="movie">

@@ -23,10 +23,10 @@
 	    	<header>
 	    		<nav id="main">
 	    			<ul>
-	    				<?php if( get_the_ID() == "2" ) { ?>
-	    					<li><a href="<?php echo get_permalink(2); ?>" class="americancaptain active">Start</a></li>
+	    				<?php if( is_home() ) { ?>
+	    					<li><a href="<?php echo bloginfo('url'); ?>" class="americancaptain active">Start</a></li>
 	    				<?php }else{ ?>
-	    					<li><a href="<?php echo get_permalink(2); ?>" class="americancaptain">Start</a></li>
+	    					<li><a href="<?php echo bloginfo('url'); ?>" class="americancaptain">Start</a></li>
 	    				<?php } ?>
 	    				
 	    				<?php if( get_the_ID() == "6" ) { ?>
