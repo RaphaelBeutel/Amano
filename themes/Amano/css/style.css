@@ -25,6 +25,7 @@ h1 {
   line-height: 64px;
 }
 h2 {
+  width: 920px;
   font-size: 31px;
   line-height: 35px;
   text-align: justify;
@@ -36,4 +37,19 @@ h2 {
   font-family: American Captain;
   font-size: 20px;
   text-shadow: #000000 -1px -1px 3px;
+}
+.movie {
+  min-height: 350px;
+  margin-top: 40px;
+}
+.movie img {
+  width: 554px;
+  height: 290px;
+  margin-right: 30px;
+  float: left;
+}
+.movie div {
+  width: 330px;
+  float: left;
+  text-align: justify;
 }
