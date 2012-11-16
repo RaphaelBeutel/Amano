@@ -1,16 +1,27 @@
 $(document).ready(function() {
-	$(".title").click(function() { 
+	
+	var activeBlogPost = $('.open').attr('id');
+	
+	function set_blog_post_class(clickedBlogPostID) {	
+		$('#'+activeBlogPost).toggleClass('open').toggleClass('close');
+		$('#'+clickedBlogPostID).toggleClass('close').toggleClass('open');
+	}
+	
+	function set_blog_post_height(clickedBlogPostID) {
+		clickedBlogPostHeigh = $("#content-"+clickedBlogPostID).height()+60+"px";
 		
-		var postID = $(this).parent('div').attr("id"); 
-		var curClass = $("#"+postID).attr("class");
-		postHeight = $("#content-"+postID).height();
+		$('#'+activeBlogPost).css({ 'height' : "40px" });
+		$('#'+clickedBlogPostID).css({ 'height' : clickedBlogPostHeigh });
+	}
+	
+	$('.title').click(function() { 
+		clickedBlogPostID = $(this).parent('div').attr('id');
 		
-		$("#"+postID).toggleClass(function() {
-		  if ( curClass.indexOf("close") != -1 ) {
-		  	return "open";
-		  }else{
-		  	return "close";
-		  }
-		});
+		set_blog_post_height(clickedBlogPostID);
+		set_blog_post_class(clickedBlogPostID);
+		
+		activeBlogPost = clickedBlogPostID;
 	});
+	
+	set_blog_post_height(activeBlogPost);
 });

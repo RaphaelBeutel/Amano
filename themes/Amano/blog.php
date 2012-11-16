@@ -10,7 +10,7 @@
 			<?php query_posts( 'post_type=post' ); ?>
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 				<?php if ( $post_number == 0 ) { ?>
-					<div id="<?php the_ID(); ?>" class="blog close open">
+					<div id="<?php the_ID(); ?>" class="blog open">
 				<?php }else{ ?>
 					<div id="<?php the_ID(); ?>" class="blog close ">
 				<?php } ?>
