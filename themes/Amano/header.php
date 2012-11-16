@@ -42,10 +42,12 @@
 	    					<li><a href="<?php echo get_permalink(8); ?>" class="americancaptain">Filme</a></li>
 	    				<?php } ?>
 	    				
+	    				<?php $slug = basename(get_permalink(get_first_blog_post())); ?>
+	    				
 	    				<?php if( get_the_ID() == "10" ) { ?>
-	    					<li><a href="<?php echo get_permalink(10); ?>" class="americancaptain active">Blog</a></li>
+	    					<li><a href="<?php echo get_permalink(10).$slug; ?>" class="americancaptain active">Blog</a></li>
 	    				<?php }else{ ?>
-	    					<li><a href="<?php echo get_permalink(10); ?>" class="americancaptain">Blog</a></li>
+	    					<li><a href="<?php echo get_permalink(10).$slug; ?>" class="americancaptain">Blog</a></li>
 	    				<?php } ?>
 	    			</ul>
 	    		</nav>
