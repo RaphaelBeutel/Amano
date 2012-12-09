@@ -7,8 +7,12 @@
 				<?php $thumbnailSRC = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
 				<img src="<?php echo($thumbnailSRC); ?>">
 				
-				<div class="text americancaptain">
-					<?php the_content(); ?>
+				<div class="outaborder">
+					<div class="innerborder">
+						<div class="text americancaptain">
+							<?php the_content(); ?>
+						</div>
+					</div>
 				</div>
 			</div>
 			

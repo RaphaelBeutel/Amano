@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	
+//Blog	
 	var activeBlogPost = $('.open').attr('id');
 	
 	function set_browser_url(setUrlTo) {
@@ -23,7 +23,7 @@ $(document).ready(function() {
   		url = location.pathname; 
   		url = url.split('/blog/');
   		
-  		if ( url['0'] !=  null) {
+  		if ( url['1'] !=  null) {
 	  		postName = url['1'].split('/');
 	  		postName = postName['0'];
 	  		
@@ -47,4 +47,18 @@ $(document).ready(function() {
 	});
 	
 	set_blog_post_height(activeBlogPost);
+	
+	
+//Home
+	if( jQuery('#home').length > 0 ){
+		var text = jQuery('p:first-child');
+		color = jQuery(text[0]).children().css('color');
+		
+		jQuery('.outaborder').css('border-color', color);
+		jQuery('.innerborder').css('border-color', color);
+		if( jQuery('p').length > 1){
+			jQuery('p:last-child').css('font-family', 'Marketing Script');
+			jQuery('p:last-child').css('margin-top', '20px');
+		}
+	}
 });

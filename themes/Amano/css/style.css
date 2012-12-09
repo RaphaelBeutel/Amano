@@ -6,6 +6,10 @@
   font-family: American Captain;
   src: url(../gfx/font/AmericanCaptain.otf);
 }
+@font-face {
+  font-family: Marketing Script;
+  src: url(../gfx/font/MarketingScript.ttf);
+}
 body {
   font-family: Znikomit;
   font-size: 18px;
@@ -38,7 +42,7 @@ h2 {
 .americancaptain {
   font-family: American Captain;
   font-size: 20px;
-  text-shadow: #000000 -1px -1px 3px;
+  text-shadow: #000000 -1px -1px 1px;
 }
 #home {
   width: 100%;
@@ -53,16 +57,21 @@ h2 {
   height: 101%;
 }
 #home .text {
-  position: absolute;
-  height: 260px;
   width: 760px;
-  margin: -170px 0px 0px -420px;
-  padding: 40px;
-  top: 50%;
-  left: 50%;
-  border: 5px double #000000;
   font-size: 50px;
   line-height: 54px;
+}
+#home .outaborder {
+  position: absolute;
+  margin: -170px 0px 0px -420px;
+  top: 50%;
+  left: 50%;
+  padding: 3px;
+  border: 4px solid #000;
+}
+#home .innerborder {
+  padding: 40px;
+  border: 2px solid #000;
 }
 .movie {
   min-height: 350px;
