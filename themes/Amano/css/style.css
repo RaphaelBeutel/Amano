@@ -12,7 +12,10 @@ body {
   line-height: 22px;
 }
 a {
-  transition: all 200ms;
+  transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -webkit-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
   text-decoration: none;
   color: #fff4d0;
 }
@@ -78,10 +81,16 @@ h2 {
 }
 .close {
   transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -webkit-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
   height: 40px;
 }
 .close #arrow {
   transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -webkit-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
   margin: 10px;
   width: 10px;
   height: 10px;
@@ -89,15 +98,24 @@ h2 {
 }
 .open {
   transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -webkit-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
   height: auto;
 }
 .open #arrow {
-  transition: all 200ms linear;
+  transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -webkit-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
   margin: 10px;
   width: 10px;
   height: 10px;
   float: left;
   transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
 }
 .blog {
   margin-top: 10px;
