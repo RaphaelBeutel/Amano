@@ -10,10 +10,11 @@
 					<div id="<?php the_ID(); ?>" class="movie">
 						<h2><?php the_title(); ?></h2><br>
 						
-						<?php $thumbnailSRC = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
-						<img src="<?php echo $thumbnailSRC; ?>">
+						<div class="embed">
+							<?php echo get_post_meta( get_the_ID(), 'movie_embed_code', true ); ?>
+						</div>
 						
-						<div>
+						<div class="text">
 							<?php the_content(); ?>
 						</div>
 					</div>
