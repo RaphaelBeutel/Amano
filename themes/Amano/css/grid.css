@@ -10,6 +10,7 @@
   background-image: url('../gfx/header.png');
   height: 100%;
   width: 305px;
+  margin-left: -25px;
 }
 .wrapper header #main ul {
   padding-left: 35px;
